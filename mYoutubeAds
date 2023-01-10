@@ -1,0 +1,8 @@
+#基于墨鱼老师@Cuttlefish的脚本，做一些小测试。
+
+hostname = m.youtube.com
+
+
+^https?:\/\/m\.youtube\.com\/api\/stats\/ads url reject-200
+^https?:\/\/m\.youtube\.com\/(pagead|ptracking) url reject-200
+^https?:\/\/m\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
